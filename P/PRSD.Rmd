@@ -6,6 +6,10 @@ output: html_document
 ---
 
 ```{r}
-setwd("~/Desktop/DataAnalytics301")
-library(car)
+setwd("~/Desktop/DataAnalytics301/P") #sets working directory you will have to change this when running the code. 
+drugs<- read.csv("Accidental_Drug_Related_Deaths__2012-2017.csv") #reads in the data file 
+SHerion<-subset(drugs, Heroin=="Y") #creates a subset of data with only herion users 
+drugs$Age<- as.numeric(drugs$Age)
+SHerion$Age<- as.numeric(SHerion$Age)
+hist(SHerion$Age) #creates a histogram for the age distribution of first herion useage 
 ```
