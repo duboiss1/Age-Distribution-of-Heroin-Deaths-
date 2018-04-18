@@ -1,0 +1,11 @@
+---
+title: "Public Repo Code"
+author: "Sydney DuBois"
+date: "April 17, 2018"
+output: html_document
+---
+
+```{r}
+setwd("~/Desktop/DataAnalytics301")
+library(car)
+```
